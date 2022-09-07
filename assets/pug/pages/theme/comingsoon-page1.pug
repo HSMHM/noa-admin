@@ -1,0 +1,31 @@
+- var countdown             = true;
+
+doctype html
+html(lang='ar' dir='rtl')
+    include ../../components/header-files
+    body.rtl
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.modern-sidebar
+            // Page Body Start
+            .container-fluid.p-0
+              .comingsoon
+                .comingsoon-inner.text-center
+                  img(src='../assets/images/logo/noa-dark.svg', alt='')
+                  h5 WE ARE COMING SOON
+                  #clockdiv.countdown
+                    ul
+                      li
+                        span#days.time.digits
+                        span.title days
+                      li
+                        span#hours.time.digits
+                        span.title Hours
+                      li
+                        span#minutes.time.digits
+                        span.title Minutes
+                      li
+                        span#seconds.time.digits
+                        span.title Seconds
+
+        include ../../components/footer-files
