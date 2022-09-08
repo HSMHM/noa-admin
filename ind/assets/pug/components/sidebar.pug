@@ -1,0 +1,93 @@
+- var status_toggle = (sidebar_open ? undefined : 'checked');
+// Page Sidebar Start
+header.main-nav
+  .sidebar-user.text-center
+    a(href="javascript:void(0)").setting-primary
+      i(data-feather='settings')
+    img.img-90.rounded-circle(src='../assets/images/dashboard/1.png', alt='')
+    .badge-bottom
+    a(href="user-profile.html")
+      h6.mt-3.f-14.f-w-600 خالد بدر
+    p.mb-0.font-roboto آخر تسجيل دخول : 10/10/2022 - 10:10
+
+  nav
+    .main-navbar
+      .left-arrow#left-arrow
+        i(data-feather='arrow-left')
+      #mainnav            
+        ul.nav-menu.custom-scrollbar
+          li.back-btn
+            .mobile-back.text-end
+              span عودة
+              i.fa.fa-angle-right.ps-2(aria-hidden='true')
+          li.dropdown
+            a.nav-link.menu-title.link-nav(href='ind-index.html')
+              i(data-feather='home')
+              span لوحة المعلومات        
+          li.dropdown
+            a.nav-link.menu-title(href='javascript:void(0)')
+              i(data-feather='edit')
+              span التأسيس
+            ul.nav-submenu.menu-content
+              li
+                a(href='ind-new-request.html')
+                  | تقديم طلب تأسيس
+              li
+                a(href='ind-requests.html') طلبات التأسيس 
+          li.dropdown
+            a.nav-link.menu-title(href='javascript:void(0)')
+              i(data-feather='server')
+              span تقديم الخدمات
+            ul.nav-submenu.menu-content
+              li
+                a(href='#') تطوع 
+              li
+                a(href='#') دوام كامل 
+              li
+                a(href='#') دوام جزئي
+              li
+                a(href='#') عمل حر 
+          li.dropdown
+            a.nav-link.menu-title(href='javascript:void(0)')
+              i(data-feather='award')
+              span التراخيص المهنية
+            ul.nav-submenu.menu-content
+              li
+                a(href='#') تقديم طلب ترخيص 
+              li
+                a(href='#') طلبات التراخيص 
+          li.dropdown
+            a.nav-link.menu-title(href='javascript:void(0)')
+              i(data-feather='git-branch')
+              span الإنتساب
+            ul.nav-submenu.menu-content
+              li
+                a(href='#') قبول طلبات الإنتساب 
+              li
+                a(href='#') المنظمات المنتسب لها   
+              li
+                a(href='#') العضويات
+              li
+                a(href='#') التفويض 
+          li.dropdown
+            a.nav-link.menu-title.link-nav(href='#')
+              i(data-feather='dollar-sign')
+              span التبرعات 
+          li.dropdown
+            a.nav-link.menu-title.link-nav(href='#')
+              i(data-feather='eye')
+              span الجلسات    
+          li.dropdown
+            a.nav-link.menu-title.link-nav(href='#')
+              i(data-feather='help-circle')
+              span طلب الاستعلام 
+          li.dropdown
+            a.nav-link.menu-title.link-nav(href='#')
+              i(data-feather='gift')
+              span مزايا وحوافز
+          li.dropdown
+            a.nav-link.menu-title.link-nav(href='ind-calender.html')
+              i(data-feather='layout')
+              span روزنامة القطاع غير الربحي  
+
+// Page Sidebar Ends

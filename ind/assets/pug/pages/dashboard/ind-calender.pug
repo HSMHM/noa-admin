@@ -1,0 +1,86 @@
+- var theme_customizer      = false;
+- var calendar              = true;
+- var calendar_basic        = true;
+doctype html
+html(lang='ar' dir='rtl')
+    include ../../components/header-files
+    body.rtl
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.modern-sidebar
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-header
+                            .row
+                                .col-sm-6
+                                    h3
+                                      | روزنامة القطاع غير الربحي
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')
+                                          | الرئيسية
+                                      li.breadcrumb-item.active روزنامة القطاع غير الربحي
+                    // Container-fluid starts
+                    .container-fluid.calendar-basic
+                        .row
+                          .col-12
+                            .card
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #menu
+                                      #menu-navi
+                                        .menu-navi-left
+                                          button.btn.btn-primary.move-today(type='button' data-action='move-today') اليوم
+                                        #renderRange.render-range.menu-navi-center
+                                        .menu-navi-right
+                                          button#dropdownMenu-calendarType.btn.btn-primary(type='button' data-bs-toggle='dropdown')
+                                            i#calendarTypeIcon
+                                            span#calendarTypeName قائمة منسدلة
+                                            i.fa.fa-angle-down
+                                          ul.dropdown-menu(role='menu')
+                                            li(role='presentation')
+                                              a.dropdown-menu-title(role='menuitem' data-action='toggle-daily')
+                                                i.fa.fa-bars
+                                                | يومي
+                                            li(role='presentation')
+                                              a.dropdown-menu-title(role='menuitem' data-action='toggle-weekly')
+                                                i.fa.fa-th-large
+                                                | اسبوعي
+                                            li(role='presentation')
+                                              a.dropdown-menu-title(role='menuitem' data-action='toggle-monthly')
+                                                i.fa.fa-th
+                                                | شهري
+                                            li.dropdown-divider(role='presentation')
+                                            li(role='presentation')
+                                              a(role='menuitem' data-action='toggle-workweek')
+                                                input.tui-full-calendar-checkbox-square(type='checkbox' value='toggle-workweek' checked='')
+                                                span.checkbox-title
+                                                | إظهار عطلة نهاية الاسبوع
+                                          .move-btn
+                                            button.btn.btn-primary.move-day(type='button' data-action='move-prev')
+                                              i.fa.fa-angle-left(data-action='move-prev')
+                                            button.btn.btn-primary.move-day(type='button' data-action='move-next')
+                                              i.fa.fa-angle-right(data-action='move-next')
+                                    #lnb
+                                      .lnb-new-schedule
+                                        button#btn-new-schedule.btn.lnb-new-schedule-btn.btn-primary(type='button' data-bs-toggle='modal')
+                                          | جدول جديد
+                                      #lnb-calendars.lnb-calendars
+                                        #calendarList.lnb-calendars-d1
+                                        .lnb-calendars-item.m-0.p-0
+                                          label
+                                            input.tui-full-calendar-checkbox-square(type='checkbox' value='all' checked='')
+                                            span
+                                            strong الكل
+                                  .col-md-12
+                                    #right
+                                      #calendar
+                    // Container-fluid Ends
+
+                include ../../components/footer
+        include ../../components/footer-files 
