@@ -2,11 +2,23 @@
 // Page Sidebar Start
 header.main-nav
   .sidebar-user.text-center
-    a(href="javascript:void(0)").setting-primary
-      i(data-feather='settings')
+    a(href="javascript:void(0)").setting-primary.onhover-dropdown
+      .notification-box
+        i(data-feather='settings')
+        span.dot-animated
+      ul.notification-dropdown.onhover-show-div
+        li.bg-light-success
+          p.f-w-700.mb-0 لديك 3 تنبيهات جديدة
+            span.pull-right.badge.badge-primary.badge-pill 4
+        li.noti-primary
+          .media
+            span.notification-bg.bg-light-primary
+              i(data-feather='activity') 
+            .media-body
+              p تم تحديث حالة الطلب : تأسيس منظمة
+              span 13/05/2022
     img.img-90.rounded-circle(src='../assets/images/dashboard/1.png', alt='')
-    .badge-bottom
-    a(href="user-profile.html")
+    a(href="#")
       h6.mt-3.f-14.f-w-600 خالد بدر
     p.mb-0.font-roboto آخر تسجيل دخول : 10/10/2022 - 10:10
 
