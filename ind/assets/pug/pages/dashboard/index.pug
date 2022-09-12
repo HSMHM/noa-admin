@@ -1,5 +1,6 @@
 - var chartist              = true;
 - var vector_map            = true;
+- var apex                  = true;
 - var theme_customizer      = false;
 - var tooltip               = false;
 - var dashboard_default     = true;
@@ -7,21 +8,19 @@
 - var animate               = true;
 - var knobchart             = true;
 - var page_knobchart        = true;
-- var date_picker           = false;
+- var date_picker           = true;
 - var counter               = true;
 - var clipboard             = true;
 - var customcard            = true;
 - var prism                 = true;
-- var apex                  = true;
-- var page_apex             = true;
 
 doctype html
 html(lang='ar' dir="rtl")
     include ../../components/header-files
-    body.rtl.rtl
+    body.rtl.dark-sidebar
         include ../../components/loader
         // page-wrapper Start       
-        #pageWrapper.page-wrapper.modern-sidebar
+        #pageWrapper.page-wrapper.compact-sidebar
             include ../../components/header
             // Page Body Start
             .page-body-wrapper.sidebar-icon
