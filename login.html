@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/login.css">
 
 </head>
 
@@ -27,7 +28,7 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="50">
         <div class="container">
             <div class="navbar-translate">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img class="navbar-logo" src="images/noa-light.svg" alt="" width="120">
                 </a>
                 <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,16 +60,55 @@
         <div class="filter"></div>
         <div class="content-center w-100">
             <div class="container">
-                <div class="row gx-5 align-items-center justify-content-between">
-                    <div data-aos="fade-up" data-aos-duration="2000" class="col-lg-12 col-xl-7 col-xxl-6">
-                        <div class="my-5 text-center text-xl-start">
-                            <h1 class="display-5 fw-bolder text-white mb-2 line-h-1">منصة إلكترونية لمضاعفة العمل الخيري</h1>
-                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                <a class="btn fs-6 btn-outline-primary btn-round px-5 me-sm-3 mt-3" href="login.html">تسجيل الدخول</a>
+                <div class="row">
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" class="col-12 col-xs-6 col-md-6 col-lg-3">
+                        <div class="card login-card" tabindex="0">
+                            <div class="card-image gov-image">
+                                <img src="images/noa-gov-logo.png" alt="">
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" role="button">
+                                    <a class="btn fs-6 btn-primary btn-round px-5 me-sm-3 mt-3" href="#">تسجيل الدخول</a>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-down" data-aos-duration="2000" class="col-lg-12 col-xl-5 col-xxl-6 d-none d-xl-block text-center px-5"><img class="img-fluid hero-image my-5" src="images/noa-light.svg" alt="..." /></div>
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" class="col-12 col-xs-6 col-md-6 col-lg-3">
+                        <div class="card login-card" tabindex="0">
+                            <div class="card-image business-image">
+                                <img src="images/noa-business-logo.png" alt="">
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" role="button">
+                                    <a class="btn fs-6 btn-primary btn-round px-5 me-sm-3 mt-3" href="#">تسجيل الدخول</a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" class="col-12 col-xs-6 col-md-6 col-lg-3">
+                        <div class="card login-card" tabindex="0">
+                            <div class="card-image ngo-image">
+                                <img src="images/noa-ngo-logo.png" alt="">
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" role="button">
+                                    <a class="btn fs-6 btn-primary btn-round px-5 me-sm-3 mt-3" href="ngo/dashboard/index.html">تسجيل الدخول</a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" class="col-12 col-xs-6 col-md-6 col-lg-3">
+                        <div class="card login-card" tabindex="0">
+                            <div class="card-image individual-image">
+                                <img src="images/noa-individual-logo.png" alt="">
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" role="button">
+                                    <a class="btn fs-6 btn-primary btn-round px-5 me-sm-3 mt-3" href="ind/dashboard/index.html">تسجيل الدخول</a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -136,16 +176,8 @@
         $(window).scroll(function(event) {
             if ($(window).scrollTop() <= 0) {
                 $(".navbar-logo").attr("src", "images/noa-light.svg");
-                $(".nav-link").css({
-                    'color': 'white',
-                    'font-size': '150%'
-                });
             } else {
                 $(".navbar-logo").attr("src", "images/noa-dark.svg");
-                $(".nav-link").css({
-                    'color': 'black',
-                    'font-size': '150%'
-                });
             }
         });
     </script>
