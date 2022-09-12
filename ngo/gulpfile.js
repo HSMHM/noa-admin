@@ -56,7 +56,7 @@ function validateHtml() {
 // Watch function
 function watch() {
     browserSync.init({
-        proxy: 'http://localhost/noa-admin/ind/dashboard/index.html'
+        proxy: 'http://localhost/noa-admin/ngo/dashboard/index.html'
     });
     gulp.watch('assets/scss/**/*.scss', style);
     gulp.watch('assets/pug/pages/dashboard/**.pug', html);

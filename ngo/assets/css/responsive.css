@@ -1129,36 +1129,6 @@
     width: 40%; } }
 
 @media screen and (max-width: 991px) {
-  .page-wrapper.compact-wrapper .page-body-wrapper header.main-nav .main-navbar .nav-menu {
-    height: calc(100vh - 220px); }
-  .page-wrapper.compact-wrapper .page-body-wrapper header .sidebar-user {
-    padding: 20px 30px; }
-    .page-wrapper.compact-wrapper .page-body-wrapper header .sidebar-user .setting-primary {
-      top: 20px; }
-    .page-wrapper.compact-wrapper .page-body-wrapper header .sidebar-user img {
-      width: 35px !important;
-      border-width: 3px !important;
-      float: left; }
-    .page-wrapper.compact-wrapper .page-body-wrapper header .sidebar-user .badge-bottom {
-      display: none; }
-    .page-wrapper.compact-wrapper .page-body-wrapper header .sidebar-user h6 {
-      margin-top: 0 !important;
-      padding-left: 50px;
-      text-align: left;
-      display: block; }
-    .page-wrapper.compact-wrapper .page-body-wrapper header .sidebar-user p {
-      padding-left: 15px;
-      text-align: left;
-      max-width: 120px;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden; }
-    .page-wrapper.compact-wrapper .page-body-wrapper header .sidebar-user ul {
-      margin-top: 10px;
-      border-top: 1px #cccccc dashed;
-      padding-top: 10px; }
-  .page-wrapper.compact-wrapper .page-body-wrapper header.main-nav {
-    top: 65px; }
   .ttl-info {
     display: block; }
   .page-wrapper .page-body-wrapper .page-body {
@@ -1324,8 +1294,6 @@
       padding: 20px; }
       .page-wrapper.compact-wrapper .page-body-wrapper.sidebar-icon header.main-nav .sidebar-user .badge-bottom {
         top: 86px; }
-    .page-wrapper.compact-wrapper .page-body-wrapper.sidebar-icon header.main-nav .main-navbar .nav-menu {
-      height: calc(100vh - 304px); }
     .page-wrapper.compact-wrapper .page-body-wrapper.sidebar-icon header.main-nav.close_icon .main-navbar .nav-menu {
       height: unset; }
   .page-wrapper .page-main-header .main-header-right {
@@ -1371,7 +1339,6 @@
     .page-wrapper .page-main-header .left-menu-header ul li i {
       display: inline; }
   .page-wrapper.compact-sidebar.compact-wrapper .page-body-wrapper header.main-nav .main-navbar .nav-menu {
-    height: calc(100vh - 80px);
     padding-top: 20px;
     padding-bottom: 20px; }
     .page-wrapper.compact-sidebar.compact-wrapper .page-body-wrapper header.main-nav .main-navbar .nav-menu .dropdown .menu-content {
@@ -1701,8 +1668,6 @@
     padding: 20px; }
     .page-wrapper.compact-wrapper .page-body-wrapper header.main-nav .sidebar-user ul {
       display: none; }
-  .page-wrapper.compact-wrapper .page-body-wrapper header.main-nav .main-navbar .nav-menu {
-    height: calc(100vh - 220px); }
   .order-history table tbody tr td img {
     width: 25px !important; }
   .calendar-basic .lnb-calendars > div {
@@ -2417,8 +2382,6 @@
     margin-top: 10px; }
   .page-wrapper.compact-wrapper .page-body-wrapper.sidebar-icon header.main-nav {
     top: 59px; }
-    .page-wrapper.compact-wrapper .page-body-wrapper.sidebar-icon header.main-nav .main-navbar .nav-menu {
-      height: calc(100vh - 79px); }
   footer p {
     font-size: 12px; }
   .mobile-clock-widget #date {

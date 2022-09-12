@@ -2377,57 +2377,6 @@
 }
 
 @media screen and (max-width: 991px) {
-    .page-wrapper {
-        &.compact-wrapper {
-            .page-body-wrapper {
-                header {
-                    &.main-nav {
-                        .main-navbar {
-                            .nav-menu {
-                                height: calc(100vh - 220px);
-                            }
-                        }
-                    }
-                    .sidebar-user {
-                        padding: 20px 30px;
-                        .setting-primary {
-                            top: 20px;
-                        }
-                        img {
-                            width: 35px !important;
-                            border-width: 3px !important;
-                            float: left;
-                        }
-                        .badge-bottom {
-                            display: none;
-                        }
-                        h6 {
-                            margin-top: 0 !important;
-                            padding-left: 50px;
-                            text-align: left;
-                            display: block;
-                        }
-                        p {
-                            padding-left: 15px;
-                            text-align: left;
-                            max-width: 120px;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                            overflow: hidden;
-                        }
-                        ul {
-                            margin-top: 10px;
-                            border-top: 1px $gray-60 dashed;
-                            padding-top: 10px;
-                        }
-                    }
-                    &.main-nav {
-                        top: 65px;
-                    }
-                }
-            }
-        }
-    }
     .ttl-info {
         display: block;
     }
@@ -2726,11 +2675,6 @@
                                     top: 86px;
                                 }
                             }
-                            .main-navbar {
-                                .nav-menu {
-                                    height: calc(100vh - 304px);
-                                }
-                            }
                             &.close_icon {
                                 .main-navbar {
                                     .nav-menu {
@@ -2807,7 +2751,6 @@
                         &.main-nav {
                             .main-navbar {
                                 .nav-menu {
-                                    height: calc(100vh - 80px);
                                     padding-top: 20px;
                                     padding-bottom: 20px;
                                     .dropdown {
@@ -3526,11 +3469,6 @@
                     padding: 20px;
                     ul {
                         display: none;
-                    }
-                }
-                .main-navbar {
-                    .nav-menu {
-                        height: calc(100vh - 220px);
                     }
                 }
             }
@@ -5123,11 +5061,6 @@
                     header {
                         &.main-nav {
                             top: 59px;
-                            .main-navbar {
-                                .nav-menu {
-                                    height: calc(100vh - 79px);
-                                }
-                            }
                         }
                     }
                 }
