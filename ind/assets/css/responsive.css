@@ -323,7 +323,7 @@
   .comment-box ul ul {
     margin-left: 50px; }
   .browser-widget img {
-    height: 50px; }
+    height: 150px; }
   .browser-widget .media-img {
     margin-left: auto;
     margin-right: auto;
@@ -898,7 +898,7 @@
   .browser-widget {
     padding: 0px; }
     .browser-widget img {
-      height: 50px; }
+      height: 120px; }
     .browser-widget .media .media-body h4 {
       font-size: 17px; }
     .browser-widget .media .media-img {
@@ -2780,8 +2780,7 @@
   .page-wrapper .page-body-wrapper .card {
     -webkit-box-shadow: 0 0 11px 5px rgba(113, 113, 113, 0.08);
             box-shadow: 0 0 11px 5px rgba(113, 113, 113, 0.08);
-    margin-bottom: 15px;
-    overflow: hidden; }
+    margin-bottom: 15px; }
     .page-wrapper .page-body-wrapper .card .card-header .tab-content .m-t-30,
     .page-wrapper .page-body-wrapper .card .card-body .tab-content .m-t-30 {
       margin-top: 15px !important; }

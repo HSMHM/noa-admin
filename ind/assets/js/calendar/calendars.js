@@ -48,7 +48,7 @@ function hexToRGBA(hex) {
     calendar = new CalendarInfo();
     id += 1;
     calendar.id = String(id);
-    calendar.name = 'My Calendar';
+    calendar.name = 'الفعاليات';
     calendar.color = '#ffffff';
     calendar.bgColor = '#085566';
     calendar.dragBgColor = '#085566';
@@ -58,7 +58,7 @@ function hexToRGBA(hex) {
     calendar = new CalendarInfo();
     id += 1;
     calendar.id = String(id);
-    calendar.name = 'Company';
+    calendar.name = 'الاجتماعات';
     calendar.color = '#ffffff';
     calendar.bgColor = '#407fc1';
     calendar.dragBgColor = '#407fc1';
@@ -68,60 +68,11 @@ function hexToRGBA(hex) {
     calendar = new CalendarInfo();
     id += 1;
     calendar.id = String(id);
-    calendar.name = 'Family';
+    calendar.name = 'الدورات';
     calendar.color = '#ffffff';
     calendar.bgColor = '#ff5583';
     calendar.dragBgColor = '#ff5583';
     calendar.borderColor = '#ff5583';
     addCalendar(calendar);
 
-    calendar = new CalendarInfo();
-    id += 1;
-    calendar.id = String(id);
-    calendar.name = 'Friend';
-    calendar.color = '#ffffff';
-    calendar.bgColor = '#03bd9e';
-    calendar.dragBgColor = '#03bd9e';
-    calendar.borderColor = '#03bd9e';
-    addCalendar(calendar);
-
-    calendar = new CalendarInfo();
-    id += 1;
-    calendar.id = String(id);
-    calendar.name = 'Travel';
-    calendar.color = '#ffffff';
-    calendar.bgColor = '#1b4c43';
-    calendar.dragBgColor = '#1b4c43';
-    calendar.borderColor = '#1b4c43';
-    addCalendar(calendar);
-
-    calendar = new CalendarInfo();
-    id += 1;
-    calendar.id = String(id);
-    calendar.name = 'etc';
-    calendar.color = '#ffffff';
-    calendar.bgColor = '#9d9d9d';
-    calendar.dragBgColor = '#9d9d9d';
-    calendar.borderColor = '#9d9d9d';
-    addCalendar(calendar);
-
-    calendar = new CalendarInfo();
-    id += 1;
-    calendar.id = String(id);
-    calendar.name = 'Birthdays';
-    calendar.color = '#ffffff';
-    calendar.bgColor = '#e2c636';
-    calendar.dragBgColor = '#e2c636';
-    calendar.borderColor = '#e2c636';
-    addCalendar(calendar);
-
-    calendar = new CalendarInfo();
-    id += 1;
-    calendar.id = String(id);
-    calendar.name = 'National Holidays';
-    calendar.color = '#ffffff';
-    calendar.bgColor = '#d22d3d';
-    calendar.dragBgColor = '#d22d3d';
-    calendar.borderColor = '#d22d3d';
-    addCalendar(calendar);
 })();

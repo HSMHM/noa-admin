@@ -605,7 +605,7 @@
     }
     .browser-widget {
         img {
-            height: 50px;
+            height: 150px;
         }
         .media-img {
             margin-left: auto;
@@ -1953,7 +1953,7 @@
     .browser-widget {
         padding: 0px;
         img {
-            height: 50px;
+            height: 120px;
         }
         .media {
             .media-body {
@@ -5943,7 +5943,6 @@
             .card {
                 box-shadow: 0 0 11px 5px $common-shadow-color;
                 margin-bottom: 15px;
-                overflow: hidden;
                 .card-header,
                 .card-body {
                     // padding: 15px;
