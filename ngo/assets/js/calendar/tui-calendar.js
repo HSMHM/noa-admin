@@ -4984,7 +4984,7 @@
 
                         el[posKey] = [x, y];
 
-                        el.style.left = util.isNumber(x) ? (x + 'px') : x;
+                        el.style.right = util.isNumber(x) ? (x + 'px') : x;
                         el.style.top = util.isNumber(y) ? (y + 'px') : y;
                     },
 
@@ -5013,7 +5013,7 @@
                      * @returns {number[]} point
                      */
                     getPosition: function(el, clear) {
-                        var left,
+                        var right,
                             top,
                             bound;
 
@@ -5025,22 +5025,22 @@
                             return el[posKey];
                         }
 
-                        left = 0;
+                        right = 0;
                         top = 0;
 
-                        if ((CSS_AUTO_REGEX.test(el.style.left) || CSS_AUTO_REGEX.test(el.style.top)) &&
+                        if ((CSS_AUTO_REGEX.test(el.style.right) || CSS_AUTO_REGEX.test(el.style.top)) &&
                             'getBoundingClientRect' in el) {
                             // When the element's left or top is 'auto'
                             bound = el.getBoundingClientRect();
 
-                            left = bound.left;
+                            right = bound.right;
                             top = bound.top;
                         } else {
-                            left = parseFloat(el.style.left || 0);
+                            right = parseFloat(el.style.right || 0);
                             top = parseFloat(el.style.top || 0);
                         }
 
-                        return [left, top];
+                        return [right, top];
                     },
 
                     /**
@@ -12431,16 +12431,16 @@
                         data = scheduleData,
                         dragStartXIndex = data.dragStartXIndex < data.xIndex ? data.dragStartXIndex : data.xIndex,
                         dragEndXIndex = data.dragStartXIndex < data.xIndex ? data.xIndex : data.dragStartXIndex,
-                        leftPercent,
+                        rightPercent,
                         widthPercent;
 
-                    leftPercent = data.grids[dragStartXIndex] ? data.grids[dragStartXIndex].left : 0;
+                    rightPercent = data.grids[dragStartXIndex] ? data.grids[dragStartXIndex].right : 0;
                     widthPercent = this._getGuideWidth(dragStartXIndex, dragEndXIndex, data.grids);
 
                     /** eslint-disable require-jsdoc */
                     function setStyle() {
                         guideElement.style.display = 'block';
-                        guideElement.style.left = leftPercent + '%';
+                        guideElement.style.right = rightPercent + '%';
                         guideElement.style.width = widthPercent + '%';
                     }
 
@@ -12938,16 +12938,16 @@
 
                     /**
                      * Refresh guide element.
-                     * @param {number} leftPercent - left percent of guide element.
+                     * @param {number} rightPercent - left percent of guide element.
                      * @param {number} widthPercent - width percent of guide element.
                      * @param {boolean} isExceededLeft - schedule start is faster then render start date?
                      * @param {boolean} isExceededRight - schedule end is later then render end date?
                      */
-                    DayGridMoveGuide.prototype.refreshGuideElement = function(leftPercent, widthPercent, isExceededLeft, isExceededRight) {
+                    DayGridMoveGuide.prototype.refreshGuideElement = function(rightPercent, widthPercent, isExceededLeft, isExceededRight) {
                         var guideElement = this.guideElement;
 
                         reqAnimFrame.requestAnimFrame(function() {
-                            guideElement.style.left = leftPercent + '%';
+                            guideElement.style.right = rightPercent + '%';
                             guideElement.style.width = widthPercent + '%';
 
                             if (isExceededLeft) {
@@ -21207,7 +21207,7 @@
                     }
 
                     if (arrow.position) {
-                        borderElement.style.left = arrow.position + 'px';
+                        borderElement.style.right = arrow.position + 'px';
                     }
                 };
 
@@ -22231,47 +22231,47 @@
                     },
 
                     'popupIsAllDay-tmpl': function() {
-                        return 'All day';
+                        return 'كامل اليوم';
                     },
 
                     'popupStateFree-tmpl': function() {
-                        return 'Free';
+                        return 'متاح';
                     },
 
                     'popupStateBusy-tmpl': function() {
-                        return 'Busy';
+                        return 'مشغول';
                     },
 
                     'titlePlaceholder-tmpl': function() {
-                        return 'Subject';
+                        return 'العنوان';
                     },
 
                     'locationPlaceholder-tmpl': function() {
-                        return 'Location';
+                        return 'الموقع';
                     },
 
                     'startDatePlaceholder-tmpl': function() {
-                        return 'Start date';
+                        return 'تاريخ البداية';
                     },
 
                     'endDatePlaceholder-tmpl': function() {
-                        return 'End date';
+                        return 'تاريخ النهاية';
                     },
                     'popupSave-tmpl': function() {
-                        return 'Save';
+                        return 'حفظ';
                     },
                     'popupUpdate-tmpl': function() {
-                        return 'Update';
+                        return 'تحديث';
                     },
                     'popupDetailDate-tmpl': function(isAllDay, start, end) {
                         var isSameDate = datetime.isSameDate(start, end);
-                        var endFormat = (isSameDate ? '' : 'YYYY.MM.DD ') + 'hh:mm tt';
+                        var endFormat = (isSameDate ? '' : 'سنة.شهر.يوم ') + 'ساعة:دقيقة ';
 
                         if (isAllDay) {
-                            return datetime.format(start, 'YYYY.MM.DD') + (isSameDate ? '' : ' - ' + datetime.format(end, 'YYYY.MM.DD'));
+                            return datetime.format(start, 'سنة.شهر.يوم ') + (isSameDate ? '' : ' - ' + datetime.format(end, 'YYYY.MM.DD'));
                         }
 
-                        return (datetime.format(start, 'YYYY.MM.DD hh:mm tt') + ' - ' + datetime.format(end, endFormat));
+                        return (datetime.format(start, 'سنة.شهر.يوم  ساعة:دقيقة ') + ' - ' + datetime.format(end, endFormat));
                     },
                     'popupDetailLocation-tmpl': function(schedule) {
                         return schedule.location;
@@ -22280,7 +22280,7 @@
                         return (schedule.attendees || []).join(', ');
                     },
                     'popupDetailState-tmpl': function(schedule) {
-                        return schedule.state || 'Busy';
+                        return schedule.state || 'مشغول';
                     },
                     'popupDetailRepeat-tmpl': function(schedule) {
                         return schedule.recurrenceRule;
@@ -22289,10 +22289,10 @@
                         return schedule.body;
                     },
                     'popupEdit-tmpl': function() {
-                        return 'Edit';
+                        return 'تعديل';
                     },
                     'popupDelete-tmpl': function() {
-                        return 'Delete';
+                        return 'حذف';
                     }
                 };
 
@@ -26447,7 +26447,7 @@
                     this.theme = theme;
 
                     container.style.width = options.width + '%';
-                    container.style.left = options.left + '%';
+                    container.style.right = options.right + '%';
 
                     if (this.options.isToday) {
                         domutil.addClass(this.container, config.classname('today'));

@@ -9,7 +9,7 @@ var basic_calendar = {
             droppable: true,
             eventLimit: true,
             select: function(start, end, allDay) {
-                var title = prompt('Event Title:');
+                var title = prompt('عنوان الفعالية:');
                 if (title) {
                     $('#cal-basic').fullCalendar('renderEvent', {
                             title: title,
@@ -23,58 +23,38 @@ var basic_calendar = {
                 $('#cal-basic').fullCalendar('unselect');
             },
             events: [{
-                    title: 'All Day Event',
+                    title: 'جميع فعاليات اليوم',
                     start: '2016-06-01'
                 },
                 {
-                    title: 'Long Event',
+                    title: 'فعالية مطولة',
                     start: '2016-06-07',
                     end: '2016-06-10'
                 },
                 {
                     id: 999,
-                    title: 'Repeating Event',
+                    title: 'فعالية مكررة',
                     start: '2016-06-09T16:00:00'
                 },
                 {
                     id: 999,
-                    title: 'Repeating Event',
+                    title: 'فعالية مكررة',
                     start: '2016-06-16T16:00:00'
                 },
                 {
-                    title: 'Conference',
+                    title: 'اجتماع',
                     start: '2016-06-11',
                     end: '2016-06-13'
                 },
                 {
-                    title: 'Meeting',
+                    title: 'اجتماع',
                     start: '2016-06-12T10:30:00',
                     end: '2016-06-12T12:30:00'
                 },
-                {
-                    title: 'Lunch',
-                    start: '2016-06-12T12:00:00'
-                },
-                {
-                    title: 'Meeting',
-                    start: '2016-06-12T14:30:00'
-                },
-                {
-                    title: 'Happy Hour',
-                    start: '2016-06-12T17:30:00'
-                },
-                {
-                    title: 'Dinner',
-                    start: '2016-06-12T20:00:00'
-                },
-                {
-                    title: 'Birthday Party',
-                    start: '2016-06-13T07:00:00'
-                }
             ]
         }), $('#cal-basic-view').fullCalendar({
             header: {
-                right: 'prev,next today',
+                right: 'السابق,التالي اليوم',
                 center: 'title',
                 left: 'month,basicWeek,basicDay'
             },

@@ -265,6 +265,7 @@
             });
         }
     }
+
     function saveNewSchedule(scheduleData) {
         var calendar = scheduleData.calendar || findCalendar(scheduleData.calendarId);
         var schedule = {
@@ -331,6 +332,7 @@
         }
         refreshScheduleVisibility();
     }
+
     function refreshScheduleVisibility() {
         var calendarElements = Array.prototype.slice.call(document.querySelectorAll('#calendarList input'));
         CalendarList.forEach(function(calendar) {
@@ -342,6 +344,7 @@
             span.style.backgroundColor = input.checked ? span.style.borderColor : 'transparent';
         });
     }
+
     function setDropdownCalendarType() {
         var calendarTypeName = document.getElementById('calendarTypeName');
         var calendarTypeIcon = document.getElementById('calendarTypeIcon');
@@ -349,10 +352,10 @@
         var type = cal.getViewName();
         var iconClassName;
         if (type === 'month') {
-            type = 'Monthly';
+            type = 'شهري';
             iconClassName = 'calendar-icon fa fa-th';
         } else if (type === 'week') {
-            type = 'Weekly';
+            type = 'اسبوعي';
             iconClassName = 'calendar-icon fa fa-th-large';
         } else if (options.month.visibleWeeksCount === 2) {
             type = '2 weeks';
@@ -360,8 +363,8 @@
         } else if (options.month.visibleWeeksCount === 3) {
             type = '3 weeks';
             iconClassName = 'calendar-icon fa fa-th-large';
-        } else{
-            type = 'Daily';
+        } else {
+            type = 'يومي';
             iconClassName = 'calendar-icon fa fa-bars';
         }
 
@@ -370,9 +373,9 @@
     }
 
     function currentCalendarDate(format) {
-      var currentDate = moment([cal.getDate().getFullYear(), cal.getDate().getMonth(), cal.getDate().getDate()]);
+        var currentDate = moment([cal.getDate().getFullYear(), cal.getDate().getMonth(), cal.getDate().getDate()]);
 
-      return currentDate.format(format);
+        return currentDate.format(format);
     }
 
     function setRenderRangeText() {

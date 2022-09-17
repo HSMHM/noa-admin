@@ -1,4 +1,4 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,7 +9,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <title>نوى - أفراد</title>
+    <title>نوى - غير ربحي</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
@@ -29,7 +29,8 @@
   <!-- Feather icon-->
   <link rel="stylesheet" type="text/css" href="../assets/css/feather-icon.css">
   <!-- Plugins css start-->
-  <link rel="stylesheet" type="text/css" href="../assets/css/photoswipe.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/select2.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/date-picker.css">
   <!-- Plugins css Ends-->
   <!-- Bootstrap css-->
   <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
@@ -122,11 +123,10 @@
       <div class="page-body-wrapper horizontal-menu">
         <!-- Page Sidebar Start-->
         <header class="main-nav">
-          <div class="sidebar-user text-center"><a class="setting-white" href="javascript:void(0)"><i data-feather="settings"></i></a><img class="img-90 rounded" src="../assets/images/dashboard/2.png" alt="">
+          <div class="sidebar-user text-center"><a class="setting-white" href="javascript:void(0)"><i data-feather="settings"></i></a><img class="img-90 rounded" src="https://www.tawasal.org/wp-content/uploads/2019/06/logo-colour-_1-8-49x47.png" alt="">
             <div class="badge-bottom"></div><a class="mb-2" href="user-profile.html">
-              <h6 class="my-2 f-14 f-w-600">جمعية التحول التقني</h6></a>
-            <p class="mb-1 font-roboto">أحمد منصور</p>
-            <p class="mb-0 font-roboto">آخر تسجيل دخول : 10/10/2022 - 10:10</p>
+              <h6 class="my-2 f-14 f-w-600">جمعية تواصل</h6></a>
+            <p class="mb-1 font-roboto">رقم الترخيص: 123456789</p>
           </div>
           <nav>
             <div class="main-navbar">
@@ -137,18 +137,67 @@
                     <div class="mobile-back text-end"><span>عودة</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
                   </li>
                   <li class="dropdown"><a class="nav-link menu-title link-nav" href="index.html"><i data-feather="home"></i><span>لوحة المعلومات        </span></a></li>
-                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="edit"></i><span>التأسيس</span></a>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="javascript:void(0)"><i data-feather="globe"></i><span>MySite </span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="server"></i><span>الدعم الحكومي</span></a>
                     <ul class="nav-submenu menu-content">
-                      <li><a href="ngo-new-request.html">تقديم طلب تأسيس</a></li>
-                      <li><a href="ngo-requests.html">طلبات التأسيس </a></li>
+                      <li><a href="#">تقديم طلب منح</a></li>
+                      <li><a href="#">طلبات المنح </a></li>
                     </ul>
                   </li>
-                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="edit"></i><span>المنح</span></a>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="edit"></i><span>المنح والحوافز</span></a>
                     <ul class="nav-submenu menu-content">
-                      <li><a href="ngo-new-gives.html">تقديم طلب منح</a></li>
-                      <li><a href="ngo-gives.html">طلبات المنح </a></li>
+                      <li><a href="#">تقديم طلب منح</a></li>
+                      <li><a href="#">طلبات المنح</a></li>
                     </ul>
                   </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="file-text"></i><span>التراخيص والوثائق</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="#">اصدار ترخيص</a></li>
+                      <li><a href="#">تجديد ترخيص</a></li>
+                      <li><a href="#">شطب ترخيص</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="user-check"></i><span> الأعضاء</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="#">أضافة عضو </a></li>
+                      <li><a href="#">الاعضاء</a></li>
+                      <li><a href="#">العضويات</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="users"></i><span> الموظفين</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="#">أضافة موظف </a></li>
+                      <li><a href="#">الموظفين</a></li>
+                      <li><a href="#">الصلاحيات</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="share-2"></i><span>البرامج والمشاريع</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="#">تقديم الطلبات</a></li>
+                      <li><a href="#">طلبات البرامج والمشاريع</a></li>
+                      <li><a href="#">رفع تقرير الإغلاق</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="dollar-sign"></i><span>الشؤون المالية</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="#">مكتب المحاسب القانوني</a></li>
+                      <li><a href="#">اعتماد القوائم المالية</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="grid"></i><span>الممكنات</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="#">سبل</a></li>
+                      <li><a href="#">التحول التقني</a></li>
+                      <li><a href="#">المسؤولية المجتميعة</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="activity"></i><span>التقارير</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="crosshair"></i><span>الحوكمة</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="#"><i data-feather="sliders"></i><span>خدمات المركز</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="javascript:void(0)"><i data-feather="headphones"></i><span>التواصل </span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="javascript:void(0)"><i data-feather="alert-octagon"></i><span>الشكاوى والاعتراضات  </span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="search.html"><i data-feather="search"></i><span>البحث   </span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="javascript:void(0)"><i data-feather="map-pin"></i><span>جولة</span></a></li>
                 </ul>
               </div>
               <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
@@ -156,424 +205,90 @@
           </nav>
         </header>
         <!-- Page Sidebar Ends-->
-        <div class="page-body">
+        <div class="page-body mb-5">
           <div class="container-fluid">
             <div class="page-header">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3>Search Website</h3>
+                  <h3>البحث</h3>
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item">Others   </li>
-                    <li class="breadcrumb-item">Search Pages</li>
-                    <li class="breadcrumb-item active">Search Website</li>
+                    <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                    <li class="breadcrumb-item active">البحث</li>
                   </ol>
-                </div>
-                <div class="col-sm-6">
-                  <!-- Bookmark Start-->
-                  <div class="bookmark">
-                    <ul>
-                      <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Tables"><i data-feather="inbox"></i></a></li>
-                      <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Chat"><i data-feather="message-square"></i></a></li>
-                      <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Icons"><i data-feather="command"></i></a></li>
-                      <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Learning"><i data-feather="layers"></i></a></li>
-                      <li><a href="javascript:void(0)"><i class="bookmark-search" data-feather="star"></i></a>
-                        <form class="form-inline search-form">
-                          <div class="form-group form-control-search">
-                            <input type="text" placeholder="Search..">
-                          </div>
-                        </form>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Bookmark Ends-->
                 </div>
               </div>
             </div>
           </div>
           <!-- Container-fluid starts-->
-          <div class="container-fluid search-page">
-            <div class="row">
-              <div class="col-sm-12">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
                 <div class="card">
-                  <div class="card-header pb-0">
-                    <form class="search-form">
-                      <div class="form-group m-0">
-                        <label class="sr-only">Email</label>
-                      </div>
-                      <div class="form-group mb-0">
-                        <div class="input-group"><span class="input-group-text"><i class="icon-search"></i></span>
-                          <input class="form-control-plaintext" type="search" placeholder="Search..">
+                  <div class="card-body">
+                    <form class="theme-form">
+                      <div class="row">
+                        <div class="mb-3 col-md-6">
+                          <label class="col-form-label">المنطقة</label>
+                          <select class="js-example-basic-single js-example-rtl">
+                            <option value="da">منطقة الرياض</option>
+                            <option value="kh">منطقة مكة المكرمة</option>
+                            <option value="ju">منطقة المدينة المنورة</option>
+                            <option value="dh">منطقة القصيم</option>
+                            <option value="rh">المنطقة الشرقية</option>
+                            <option value="kr">منطقة عسير</option>
+                            <option value="hr">منطقة تبوك</option>
+                            <option value="mk">مكة المكرمة</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label class="col-form-label">المدينة</label>
+                          <select class="js-example-basic-single js-example-rtl">
+                            <option value="da">الرياض</option>
+                            <option value="kh">الخبر</option>
+                            <option value="ju">الجبيل</option>
+                            <option value="dh">الظهران</option>
+                            <option value="rh">الرياض</option>
+                            <option value="kr">الخرج</option>
+                            <option value="hr">حريملاء</option>
+                            <option value="mk">مكة المكرمة</option>
+                            <option value="jd">جدة</option>
+                            <option value="ta">الطائف</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label class="col-form-label">التصنيف</label>
+                          <select class="js-example-basic-single js-example-rtl">
+                            <option value="da">جمعية</option>
+                            <option value="kh">مؤسسة أهلية</option>
+                            <option value="ju">شركة غير ربحية</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label class="col-form-label">المجال</label>
+                          <select class="js-example-basic-single js-example-rtl">
+                            <option value="da">الصحة</option>
+                            <option value="kh">تقنية المعلومات</option>
+                            <option value="ju">اجتماعي</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label class="col-form-label">النشاط - البرنامج</label>
+                          <select class="js-example-basic-single js-example-rtl">
+                            <option value="da">كفالة يتيم</option>
+                            <option value="kh">كسوة الشتاء</option>
+                            <option value="ju">سلة رمضان</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label class="col-form-label">الفترة (من-إلى)</label>
+                          <input class="datepicker-here form-control digits" type="text" data-range="true" data-multiple-dates-separator=" - " data-language="ar">
                         </div>
                       </div>
                     </form>
                   </div>
-                  <div class="card-body">
-                    <ul class="nav nav-tabs search-list" id="top-tab" role="tablist">
-                      <li class="nav-item"><a class="nav-link active" id="all-link" data-bs-toggle="tab" href="#all-links" role="tab" aria-selected="true"><i class="icon-target"></i>All</a>
-                        <div class="material-border"></div>
-                      </li>
-                      <li class="nav-item"><a class="nav-link" id="image-link" data-bs-toggle="tab" href="#image-links" role="tab" aria-selected="false"><i class="icon-image"></i>Images</a>
-                        <div class="material-border"></div>
-                      </li>
-                      <li class="nav-item"><a class="nav-link" id="video-link" data-bs-toggle="tab" href="#video-links" role="tab" aria-selected="false"><i class="icon-video-clapper"></i>Videos</a>
-                        <div class="material-border"></div>
-                      </li>
-                      <li class="nav-item"><a class="nav-link" id="map-link" data-bs-toggle="tab" href="#map-links" role="tab" aria-selected="false"><i class="icon-map-alt"></i>Maps</a>
-                        <div class="material-border"></div>
-                      </li>
-                      <li class="nav-item"><a class="nav-link" id="setting-link" data-bs-toggle="tab" href="#setting-links" role="tab" aria-selected="false"><i class="icon-settings"></i>Settings</a>
-                        <div class="material-border"></div>
-                      </li>
-                    </ul>
-                    <div class="tab-content" id="top-tabContent">
-                      <div class="search-links tab-pane fade show active" id="all-links" role="tabpanel" aria-labelledby="all-link">
-                        <div class="row">
-                          <div class="col-xl-6 box-col-6">
-                            <p class="pb-4">About 6,000 results (0.60 seconds)</p>
-                            <div class="info-block">
-                              <h6>Lorem Ipsum is simply dummy text of the printing industry</h6><a href="#">TTS.info/</a>
-                              <p>TTS introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.</p>
-                              <div class="star-ratings">
-                                <ul class="search-info">
-                                  <li>2.5 stars</li>
-                                  <li>590 votes</li>
-                                  <li>Music</li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="info-block">
-                              <h6>Proin eleifend metus vel erat faucibus, ut bibendum nulla iaculis.</h6><a href="#">TTS.info/</a>
-                              <p>TTS introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.</p>
-                              <div class="star-ratings">
-                                <ul class="search-info">
-                                  <li>2.5 stars</li>
-                                  <li>590 votes</li>
-                                  <li>Music</li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="info-block">
-                              <h6>Fusce rutrum elit aliquet nisi malesuada cursus.</h6><a href="#">TTS.info/</a>
-                              <p>TTS introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.</p>
-                              <div class="star-ratings">
-                                <ul class="search-info">
-                                  <li>
-                                    <ul class="rating">
-                                      <li><i class="icofont icofont-ui-rating"></i></li>
-                                      <li><i class="icofont icofont-ui-rating"></i></li>
-                                      <li><i class="icofont icofont-ui-rating"></i></li>
-                                      <li><i class="icofont icofont-ui-rate-blank"></i></li>
-                                      <li><i class="icofont icofont-ui-rate-blank"></i></li>
-                                    </ul>
-                                  </li>
-                                  <li>2.5 stars</li>
-                                  <li>590 votes</li>
-                                  <li>Music</li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="info-block">
-                              <h6>Morbi feugiat mauris vel semper fringilla.</h6><a href="#">TTS.info/</a>
-                              <p>TTS introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.</p>
-                              <div class="star-ratings">
-                                <ul class="search-info">
-                                  <li>
-                                    <ul class="rating">
-                                      <li><i class="icofont icofont-ui-rating"></i></li>
-                                      <li><i class="icofont icofont-ui-rating"></i></li>
-                                      <li><i class="icofont icofont-ui-rating"></i></li>
-                                      <li><i class="icofont icofont-ui-rate-blank"></i></li>
-                                      <li><i class="icofont icofont-ui-rate-blank"></i></li>
-                                    </ul>
-                                  </li>
-                                  <li>2.5 stars</li>
-                                  <li>590 votes</li>
-                                  <li>Music</li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="info-block">
-                              <h6>Morbi feugiat mauris vel semper fringilla.</h6><a href="#">TTS.info/</a>
-                              <p>TTS introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.</p>
-                              <div class="star-ratings">
-                                <ul class="search-info">
-                                  <li>
-                                    <ul class="rating">
-                                      <li><i class="icofont icofont-ui-rating"></i></li>
-                                      <li><i class="icofont icofont-ui-rating"></i></li>
-                                      <li><i class="icofont icofont-ui-rating"></i></li>
-                                      <li><i class="icofont icofont-ui-rate-blank"></i></li>
-                                      <li><i class="icofont icofont-ui-rate-blank"></i></li>
-                                    </ul>
-                                  </li>
-                                  <li>2.5 stars</li>
-                                  <li>590 votes</li>
-                                  <li>Music</li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="info-block">
-                              <nav aria-label="...">
-                                <ul class="pagination pagination-primary">
-                                  <li class="page-item disabled"><a class="page-link" href="javascript:void(0)" tabindex="-1">Previous</a></li>
-                                  <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
-                                  <li class="page-item active"><a class="page-link" href="javascript:void(0)">2 <span class="sr-only">(current)</span></a></li>
-                                  <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                                  <li class="page-item"><a class="page-link" href="javascript:void(0)">Next</a></li>
-                                </ul>
-                              </nav>
-                            </div>
-                          </div>
-                          <div class="col-xl-6 box-col-6 search-banner">
-                            <div class="card">
-                              <div class="blog-box blog-shadow"><img class="img-fluid bg-img-cover" src="../assets/images/blog/blog.jpg" alt="">
-                                <div class="blog-details">
-                                  <p class="digits">25 July 2018</p>
-                                  <h4>Accusamus et iusto odio dignissimos ducimus qui blanditiis.</h4>
-                                  <ul class="blog-social digits">
-                                    <li><i class="icofont icofont-user"></i>Mark Jecno</li>
-                                    <li><i class="icofont icofont-thumbs-up"></i>02 Hits</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="tab-pane fade" id="image-links" role="tabpanel" aria-labelledby="image-link">
-                        <div class="info-block m-t-30">
-                          <p class="pb-4 col-sm-12 digits">About 12,120 results (0.50 seconds)</p>
-                          <div class="my-gallery row gallery-with-description" id="aniimated-thumbnials" itemscope="">
-                            <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope=""><a href="../assets/images/big-lightgallry/01.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/lightgallry/01.jpg" itemprop="thumbnail" alt="Image description">
-                                <div class="caption">
-                                  <h4>Portfolio Title</h4>
-                                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div></a>
-                              <figcaption itemprop="caption description">
-                                <h4>Portfolio Title</h4>
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                              </figcaption>
-                            </figure>
-                            <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope=""><a href="../assets/images/big-lightgallry/02.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/lightgallry/02.jpg" itemprop="thumbnail" alt="Image description">
-                                <div class="caption">
-                                  <h4>Portfolio Title</h4>
-                                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div></a>
-                              <figcaption itemprop="caption description">
-                                <h4>Portfolio Title</h4>
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                              </figcaption>
-                            </figure>
-                            <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope=""><a href="../assets/images/big-lightgallry/03.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/lightgallry/03.jpg" itemprop="thumbnail" alt="Image description">
-                                <div class="caption">
-                                  <h4>Portfolio Title</h4>
-                                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div></a>
-                              <figcaption itemprop="caption description">
-                                <h4>Portfolio Title</h4>
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                              </figcaption>
-                            </figure>
-                            <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope=""><a href="../assets/images/big-lightgallry/04.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/lightgallry/04.jpg" itemprop="thumbnail" alt="Image description">
-                                <div class="caption">
-                                  <h4>Portfolio Title</h4>
-                                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div></a>
-                              <figcaption itemprop="caption description">
-                                <h4>Portfolio Title</h4>
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                              </figcaption>
-                            </figure>
-                            <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope=""><a href="../assets/images/big-lightgallry/05.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/lightgallry/05.jpg" itemprop="thumbnail" alt="Image description">
-                                <div class="caption">
-                                  <h4>Portfolio Title</h4>
-                                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div></a>
-                              <figcaption itemprop="caption description">
-                                <h4>Portfolio Title</h4>
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                              </figcaption>
-                            </figure>
-                            <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope=""><a href="../assets/images/big-lightgallry/011.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/lightgallry/011.jpg" itemprop="thumbnail" alt="Image description">
-                                <div class="caption">
-                                  <h4>Portfolio Title</h4>
-                                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div></a>
-                              <figcaption itemprop="caption description">
-                                <h4>Portfolio Title</h4>
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                              </figcaption>
-                            </figure>
-                            <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope=""><a href="../assets/images/big-lightgallry/010.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/lightgallry/010.jpg" itemprop="thumbnail" alt="Image description">
-                                <div class="caption">
-                                  <h4>Portfolio Title</h4>
-                                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div></a>
-                              <figcaption itemprop="caption description">
-                                <h4>Portfolio Title</h4>
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                              </figcaption>
-                            </figure>
-                            <figure class="col-xl-3 col-sm-6" itemprop="associatedMedia" itemscope=""><a href="../assets/images/big-lightgallry/08.jpg" itemprop="contentUrl" data-size="1600x950"><img src="../assets/images/lightgallry/08.jpg" itemprop="thumbnail" alt="Image description">
-                                <div class="caption">
-                                  <h4>Portfolio Title</h4>
-                                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                                </div></a>
-                              <figcaption itemprop="caption description">
-                                <h4>Portfolio Title</h4>
-                                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                              </figcaption>
-                            </figure>
-                          </div>
-                          <!-- Root element of PhotoSwipe. Must have class pswp.-->
-                          <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-                            <!--
-                            Background of PhotoSwipe.
-                            It's a separate element, as animating opacity is faster than rgba().
-                            -->
-                            <div class="pswp__bg"></div>
-                            <!-- Slides wrapper with overflow:hidden.-->
-                            <div class="pswp__scroll-wrap">
-                              <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory.-->
-                              <!-- don't modify these 3 pswp__item elements, data is added later on.-->
-                              <div class="pswp__container">
-                                <div class="pswp__item"></div>
-                                <div class="pswp__item"></div>
-                                <div class="pswp__item"></div>
-                              </div>
-                              <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.-->
-                              <div class="pswp__ui pswp__ui--hidden">
-                                <div class="pswp__top-bar">
-                                  <!-- Controls are self-explanatory. Order can be changed.-->
-                                  <div class="pswp__counter"></div>
-                                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                                  <button class="pswp__button pswp__button--share" title="Share"></button>
-                                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                                  <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR-->
-                                  <!-- element will get class pswp__preloader--active when preloader is running-->
-                                  <div class="pswp__preloader">
-                                    <div class="pswp__preloader__icn">
-                                      <div class="pswp__preloader__cut">
-                                        <div class="pswp__preloader__donut"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                                  <div class="pswp__share-tooltip"></div>
-                                </div>
-                                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                                <div class="pswp__caption">
-                                  <div class="pswp__caption__center"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="info-block m-t-30">
-                          <nav aria-label="...">
-                            <ul class="pagination pagination-primary">
-                              <li class="page-item disabled"><a class="page-link" href="javascript:void(0)" tabindex="-1">Previous</a></li>
-                              <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
-                              <li class="page-item active"><a class="page-link" href="javascript:void(0)">2 <span class="sr-only">(current)</span></a></li>
-                              <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                              <li class="page-item"><a class="page-link" href="javascript:void(0)">Next</a></li>
-                            </ul>
-                          </nav>
-                        </div>
-                      </div>
-                      <div class="tab-pane fade" id="video-links" role="tabpanel" aria-labelledby="video-link">
-                        <div class="row">
-                          <div class="col-xl-6 xl-100 box-col-12">
-                            <p class="pb-4">About 6,000 results (0.60 seconds)</p>
-                            <div class="media info-block">
-                              <iframe class="me-3 mb-3" width="200" height="100" src="https://www.youtube.com/embed/CJnfAXlBRTE"></iframe>
-                              <div class="media-body">
-                                <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h6><a href="#">TTS.info/</a>
-                                <p>TTS introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.</p>
-                                <div class="star-ratings">
-                                  <ul class="search-info">
-                                    <li>2.5 stars</li>
-                                    <li>590 votes</li>
-                                    <li>Music</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="media info-block">
-                              <iframe class="me-3 mb-3" width="200" height="100" src="https://www.youtube.com/embed/-L4gEk7cOfk"></iframe>
-                              <div class="media-body">
-                                <h6>Morbi eget quam et purus commodo dapibus.</h6><a href="#">TTS.info/</a>
-                                <p>TTS introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.</p>
-                                <div class="star-ratings">
-                                  <ul class="search-info">
-                                    <li>2.5 stars</li>
-                                    <li>590 votes</li>
-                                    <li>Music</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="media info-block">
-                              <iframe class="me-3 mb-3" width="200" height="100" src="https://www.youtube.com/embed/tRjG45ut8gU"></iframe>
-                              <div class="media-body">
-                                <h6>Cuba Admin Dashboard Template </h6><a href="#">https://themeforest.net/</a>
-                                <p>TTS introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.</p>
-                                <div class="star-ratings">
-                                  <ul class="search-info">
-                                    <li>2.5 stars</li>
-                                    <li>590 votes</li>
-                                    <li>Music</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="media info-block">
-                              <iframe class="me-3 mb-3" width="200" height="100" src="https://www.youtube.com/embed/wpmHZspl4EM"></iframe>
-                              <div class="media-body">
-                                <h6>Lorem Ipsum is simply dummy text of the printing.</h6><a href="#">TTS.info/</a>
-                                <p>TTS introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.</p>
-                                <div class="star-ratings">
-                                  <ul class="search-info">
-                                    <li>2.5 stars</li>
-                                    <li>590 votes</li>
-                                    <li>Music</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="info-block">
-                              <nav aria-label="...">
-                                <ul class="pagination pagination-primary">
-                                  <li class="page-item disabled"><a class="page-link" href="javascript:void(0)" tabindex="-1">Previous</a></li>
-                                  <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
-                                  <li class="page-item active"><a class="page-link" href="javascript:void(0)">2 <span class="sr-only">(current)</span></a></li>
-                                  <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                                  <li class="page-item"><a class="page-link" href="javascript:void(0)">Next</a></li>
-                                </ul>
-                              </nav>
-                            </div>
-                          </div>
-                          <div class="col-xl-6 xl-100 box-col-12">
-                            <div class="row search-vid-block">
-                              <div class="col-xl-12 xl-50 box-col-6">
-                                <div class="embed-responsive embed-responsive-21by9 lg-mt">
-                                  <iframe class="w-100" height="315" src="https://www.youtube.com/embed/wpmHZspl4EM" allowfullscreen=""></iframe>
-                                </div>
-                              </div>
-                              <div class="col-xl-12 xl-50 box-col-6">
-                                <div class="embed-responsive embed-responsive-21by9">
-                                  <iframe class="w-100" height="315" src="https://www.youtube.com/embed/I0-vBdh4sZ8" allowfullscreen=""></iframe>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="card-footer">
+                    <button class="btn btn-primary">بحث</button>
+                    <button class="btn btn-secondary">مسح</button>
                   </div>
                 </div>
               </div>
@@ -582,11 +297,11 @@
           <!-- Container-fluid Ends-->
         </div>
         <!-- footer start-->
-        <footer class="footer">
+        <footer class="footer footer-fix">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6 footer-copyright">
-                <p class="mb-0">© 2022 منصة نوى. جميع الحقوق محفوظة.</p>
+                <p class="mb-0">جميع الحقوق محفوظة لمنصة نوى © 1444هـ - 2022م</p>
               </div>
             </div>
           </div>
@@ -605,13 +320,15 @@
     <script src="../assets/js/bootstrap/popper.min.js"></script>
     <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
     <!-- Plugins JS start-->
-    <script src="../assets/js/photoswipe/photoswipe.min.js"></script>
-    <script src="../assets/js/photoswipe/photoswipe-ui-default.min.js"></script>
-    <script src="../assets/js/photoswipe/photoswipe.js"></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.ar.js"></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+    <script src="../assets/js/select2/select2.full.min.js"></script>
+    <script src="../assets/js/select2/select2-custom.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="../assets/js/script.js"></script>
-    <script src="../assets/js/theme-customizer/customizer.js"></script>
     <!-- login js-->
     <!-- Plugin used-->
   </body>
