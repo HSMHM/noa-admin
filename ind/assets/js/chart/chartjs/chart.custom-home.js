@@ -31,7 +31,8 @@ var myChart = new Chart(ctx, {
                 "text": 'تحت الدراسة',
                 "font": {
                     "size": 16,
-                    "family": "'Noto Kufi Arabic', sans-serif"
+                    "family": "'Noto Kufi Arabic', sans-serif",
+                    "weight": "300"
                 },
             }
         },
@@ -71,7 +72,8 @@ var myChart = new Chart(ctx, {
                 "text": 'غير مكتملة',
                 "font": {
                     "size": 16,
-                    "family": "'Noto Kufi Arabic', sans-serif"
+                    "family": "'Noto Kufi Arabic', sans-serif",
+                    "weight": "300"
                 },
             }
         },
@@ -111,7 +113,8 @@ var myChart = new Chart(ctx, {
                 "text": 'مرفوضة',
                 "font": {
                     "size": 16,
-                    "family": "'Noto Kufi Arabic', sans-serif"
+                    "family": "'Noto Kufi Arabic', sans-serif",
+                    "weight": "300"
                 },
             }
         },
@@ -151,7 +154,8 @@ var myChart = new Chart(ctx, {
                 "text": 'مشطوبة',
                 "font": {
                     "size": 16,
-                    "family": "'Noto Kufi Arabic', sans-serif"
+                    "family": "'Noto Kufi Arabic', sans-serif",
+                    "weight": "300"
                 },
             }
         },
@@ -191,7 +195,8 @@ var myChart = new Chart(ctx, {
                 "text": 'بإنتطار السداد',
                 "font": {
                     "size": 16,
-                    "family": "'Noto Kufi Arabic', sans-serif"
+                    "family": "'Noto Kufi Arabic', sans-serif",
+                    "weight": "300"
                 },
             }
         },
@@ -231,7 +236,8 @@ var myChart = new Chart(ctx, {
                 "text": 'مقبولة',
                 "font": {
                     "size": 16,
-                    "family": "'Noto Kufi Arabic', sans-serif"
+                    "family": "'Noto Kufi Arabic', sans-serif",
+                    "weight": "300"
                 },
             }
 
