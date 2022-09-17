@@ -135,7 +135,12 @@
                     <div class="mobile-back text-end"><span>عودة</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
                   </li>
                   <li class="dropdown"><a class="nav-link menu-title link-nav" href="index.html"><i data-feather="home"></i><span>لوحة المعلومات        </span></a></li>
-                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="server"></i><span>تقديم الخدمات</span></a>
+                  <li class="dropdown"></li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="edit"></i><span>التأسيس</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="ind-new-request.html">تقديم طلب تأسيس</a></li>
+                      <li><a href="ind-requests.html">طلبات التأسيس </a></li>
+                    </ul><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="server"></i><span>تقديم الخدمات</span></a>
                     <ul class="nav-submenu menu-content">
                       <li><a href="#">تطوع </a></li>
                       <li><a href="#">دوام كامل </a></li>
@@ -143,28 +148,29 @@
                       <li><a href="#">عمل حر </a></li>
                     </ul>
                   </li>
-                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="award"></i><span>التراخيص المهنية</span></a>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="award"></i><span>الرخص المهنية</span></a>
                     <ul class="nav-submenu menu-content">
-                      <li><a href="#">تقديم طلب ترخيص </a></li>
-                      <li><a href="#">طلبات التراخيص </a></li>
+                      <li><a href="#">تقديم طلب رخصة </a></li>
+                      <li><a href="#">طلبات الرخص </a></li>
                     </ul>
                   </li>
                   <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="git-branch"></i><span>الإنتساب</span></a>
                     <ul class="nav-submenu menu-content">
                       <li><a href="#">قبول طلبات الإنتساب </a></li>
                       <li><a href="#">المنظمات المنتسب لها   </a></li>
-                      <li><a href="#">العضويات</a></li>
+                      <li><a href="#">إدارة العضويات</a></li>
                       <li><a href="#">التفويض </a></li>
                     </ul>
                   </li>
                   <li class="dropdown"><a class="nav-link menu-title link-nav" href="#"><i data-feather="dollar-sign"></i><span>التبرعات </span></a></li>
-                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="#"><i data-feather="eye"></i><span>الجلسات    </span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="#"><i data-feather="message-circle"></i><span>الجلسات    </span></a></li>
                   <li class="dropdown"><a class="nav-link menu-title link-nav" href="#"><i data-feather="help-circle"></i><span>طلب الاستعلام </span></a></li>
                   <li class="dropdown"><a class="nav-link menu-title link-nav" href="#"><i data-feather="gift"></i><span>مزايا وحوافز</span></a></li>
                   <li class="dropdown"><a class="nav-link menu-title link-nav" href="ind-calender.html"><i data-feather="calendar"></i><span>روزنامة القطاع غير الربحي </span></a></li>
                   <li class="dropdown"><a class="nav-link menu-title link-nav" href="#"><i data-feather="briefcase"></i><span>التطوير والتدريب </span></a></li>
                   <li class="dropdown"><a class="nav-link menu-title link-nav" href="#"><i data-feather="alert-octagon"></i><span>الشكاوى والاعتراضات  </span></a></li>
-                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="#"><i data-feather="search"></i><span>البحث   </span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="search.html"><i data-feather="search"></i><span>البحث   </span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="#"><i data-feather="map-pin"></i><span>جولة</span></a></li>
                 </ul>
               </div>
             </div>
@@ -177,15 +183,19 @@
             <div class="row">
               <div class="col-xl-12 box-col-12 des-xl-100"> 
                 <div class="row">
-                  <div class="col-xl-7 col-md-7 box-col-7 des-xl-50 h-100">
+                  <div class="col-xl-12 des-xl-100 h-100">
                     <div class="card profile-greeting">
                       <div class="card-header">
                         <div class="header-top"></div>
                       </div>
-                      <div class="card-body text-start p-t-0">
-                        <h3 class="font-light">صباح الخير، خالد  !</h3>
-                        <p class="text-start">للحصول على أحدث البيانات انقر على " تحديث " </p>
-                        <button class="btn btn-light mt-5">تحديث</button>
+                      <div class="card-body text-start p-t-0 d-flex w-100 justify-content-between">
+                        <div class="right-welcome-text">
+                          <h3 class="font-light">صباح الخير، خالد  !</h3>
+                          <p class="text-start">للحصول على أحدث البيانات انقر على " تحديث " </p>
+                        </div>
+                        <div class="left-welcome-text">
+                          <button class="btn btn-light mt-5">تحديث</button>
+                        </div>
                       </div>
                       <div class="confetti">
                         <div class="confetti-piece"></div>
@@ -205,33 +215,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-5 col-md-5 box-col-5 des-xl-50">
-                    <div class="card card-absolute">
-                      <div class="card-header bg-primary shadow">
-                        <h5 class="text-white">خدمات المنظمات</h5>
-                      </div>
-                      <div class="card-body row justify-content-between">
-                        <div class="col-lg-6">
-                          <button class="w-100 mt-2 btn btn-outline-primary-2x" type="button">خدمات التأسيس</button>
-                        </div>
-                        <div class="col-lg-6">
-                          <button class="w-100 mt-2 btn btn-outline-primary-2x" type="button">خدمات المنح</button>
-                        </div>
-                        <div class="col-lg-6">
-                          <button class="w-100 mt-2 btn btn-outline-primary-2x" type="button">خدمات التراخيص</button>
-                        </div>
-                        <div class="col-lg-6">
-                          <button class="w-100 mt-2 btn btn-outline-primary-2x" type="button">البرامج والمشاريع </button>
-                        </div>
-                        <div class="col-lg-6">
-                          <button class="w-100 mt-2 btn btn-outline-primary-2x" type="button">ممكنات المنظمة</button>
-                        </div>
-                        <div class="col-lg-6">
-                          <button class="w-100 mt-2 btn btn-outline-primary-2x" type="button">موقع المنظمة</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
               <div class="col-xl-12 box-col-12 des-xl-100 dashboard-sec">
@@ -239,100 +222,25 @@
                   <div class="card-header bg-primary shadow">
                     <h5 class="text-white">الطلبات</h5>
                   </div>
-                  <div class="card-body row justify-content-center">
+                  <div class="card-body">
                     <div class="row">
-                      <div class="col-sm-12 col-xl-8">
-                        <div class="row">
-                          <div class="col-sm-12 col-xl-12">
-                            <div class="card">
-                              <div class="card-body chart-block">
-                                <div class="flot-chart-container">
-                                  <div class="flot-chart-placeholder" id="stacked-bar-chart"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-12 col-xl-12 top-sell-sec">
-                            <div class="card">
-                              <div class="card-header shadow">
-                                <div class="header-top d-sm-flex justify-content-between align-items-center">
-                                  <h5>إجمالي الطلبات</h5>
-                                </div>
-                              </div>
-                              <div class="card-body row">
-                                <div class="card o-hidden border-0 mb-1 col-lg-4">
-                                  <div class="bg-primary b-r-4 card-body p-1">
-                                    <div class="media static-top-widget">
-                                      <div class="align-self-center text-center"><i data-feather="layers"></i></div>
-                                      <div class="media-body ps-0"><span class="m-0">طلبات الاستعلام</span>
-                                        <h4 class="mb-0 counter">4531</h4><i class="icon-bg" data-feather="layers"></i>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="card o-hidden border-0 mb-1 col-lg-4">
-                                  <div class="bg-primary b-r-4 card-body p-1">
-                                    <div class="media static-top-widget">
-                                      <div class="align-self-center text-center"><i data-feather="layers"></i></div>
-                                      <div class="media-body ps-0"><span class="m-0">طلبات الانتساب</span>
-                                        <h4 class="mb-0 counter">4531</h4><i class="icon-bg" data-feather="layers"></i>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="card o-hidden border-0 mb-1 col-lg-4">
-                                  <div class="bg-primary b-r-4 card-body p-1">
-                                    <div class="media static-top-widget">
-                                      <div class="align-self-center text-center"><i data-feather="layers"></i></div>
-                                      <div class="media-body ps-0"><span class="m-0">طلبات التراخيص</span>
-                                        <h4 class="mb-0 counter">4531</h4><i class="icon-bg" data-feather="layers"></i>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                      <div class="col-12 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 mt-2">
+                        <canvas id="chart1"></canvas>
                       </div>
-                      <div class="col-sm-12 col-xl-4 top-sell-sec">
-                        <div class="card">
-                          <div class="card-header shadow">
-                            <div class="header-top d-sm-flex justify-content-between align-items-center">
-                              <h5>الطلبات الأخيرة</h5>
-                            </div>
-                          </div>
-                          <div class="card-body">
-                            <div class="media">
-                              <div class="media-body"><a href="#">
-                                  <h6>تجديد رخصة مهنية</h6></a>
-                                <ul>
-                                  <li>                                      <i>10/05/2022</i></li>
-                                  <li><i><span class="badge rounded-pill pill-badge-success">مقبولة</span></i></li>
-                                </ul>
-                              </div><a class="btn btn-iconsolid" href="#"><i class="icon-eye"></i></a>
-                            </div>
-                            <div class="media mt-2">
-                              <div class="media-body"><a href="#">
-                                  <h6>انتساب لمنظمة</h6></a>
-                                <ul>
-                                  <li>                                      <i>10/05/2022</i></li>
-                                  <li><i><span class="badge rounded-pill pill-badge-warning">بانتظار السداد</span></i></li>
-                                </ul>
-                              </div><a class="btn btn-iconsolid" href="#"><i class="icon-eye"></i></a>
-                            </div>
-                            <div class="media mt-2">
-                              <div class="media-body"><a href="#">
-                                  <h6>إلغاء انتساب لمنظمة</h6></a>
-                                <ul>
-                                  <li>                                      <i>10/05/2022</i></li>
-                                  <li><i><span class="badge rounded-pill pill-badge-danger">مشطوبة</span></i></li>
-                                </ul>
-                              </div><a class="btn btn-iconsolid" href="#"><i class="icon-eye"></i></a>
-                            </div>
-                            <button class="w-100 mt-2 btn btn-outline-primary-2x" type="button">عرض جميع الطلبات</button>
-                          </div>
-                        </div>
+                      <div class="col-12 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 mt-2">
+                        <canvas id="chart2"></canvas>
+                      </div>
+                      <div class="col-12 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 mt-2">
+                        <canvas id="chart3"></canvas>
+                      </div>
+                      <div class="col-12 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 mt-2">
+                        <canvas id="chart4"></canvas>
+                      </div>
+                      <div class="col-12 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 mt-2">
+                        <canvas id="chart5"></canvas>
+                      </div>
+                      <div class="col-12 col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 mt-2">
+                        <canvas id="chart6"></canvas>
                       </div>
                     </div>
                   </div>
@@ -343,10 +251,10 @@
                   <div class="card-header bg-primary shadow">
                     <h5 class="text-white">التطوع</h5>
                   </div>
-                  <div class="card-body row justify-content-center">
+                  <div class="card-body row justify-content-center pb-0">
                     <div class="row">
                       <div class="col-sm-6 col-xl-3 col-lg-3">
-                        <div class="card o-hidden border-0">
+                        <div class="card o-hidden border-0 mb-3">
                           <div class="bg-primary b-r-4 card-body">
                             <div class="media static-top-widget">
                               <div class="align-self-center text-center"><i data-feather="clock"></i></div>
@@ -358,7 +266,7 @@
                         </div>
                       </div>
                       <div class="col-sm-6 col-xl-3 col-lg-3">
-                        <div class="card o-hidden border-0">
+                        <div class="card o-hidden border-0 mb-3">
                           <div class="bg-primary b-r-4 card-body">
                             <div class="media static-top-widget">
                               <div class="align-self-center text-center"><i data-feather="check"></i></div>
@@ -370,7 +278,7 @@
                         </div>
                       </div>
                       <div class="col-sm-6 col-xl-3 col-lg-3">
-                        <div class="card o-hidden border-0">
+                        <div class="card o-hidden border-0 mb-3">
                           <div class="bg-primary b-r-4 card-body">
                             <div class="media static-top-widget">
                               <div class="align-self-center text-center"><i data-feather="git-pull-request"></i></div>
@@ -382,7 +290,7 @@
                         </div>
                       </div>
                       <div class="col-sm-6 col-xl-3 col-lg-3">
-                        <div class="card o-hidden border-0">
+                        <div class="card o-hidden border-0 mb-3">
                           <div class="bg-primary b-r-4 card-body">
                             <div class="media static-top-widget">
                               <div class="align-self-center text-center"><i data-feather="layers"></i></div>
@@ -402,46 +310,46 @@
                   <div class="card-header bg-primary shadow">
                     <h5 class="text-white">التبرعات</h5>
                   </div>
-                  <div class="card-body row justify-content-center">
+                  <div class="card-body row pb-1 justify-content-center">
                     <div class="row">
                       <div class="col-sm-12 col-xl-12 col-lg-12">
                         <div class="browser-widget">
                           <div class="media">
                             <div class="media-img me-3"><img src="../assets/images/label1.png" alt="" height="200px"></div>
                             <div class="media-body row">
-                              <div class="col-sm-4 card o-hidden border-0 mb-0">
+                              <div class="col-sm-4 card o-hidden border-0 mb-0 mt-2">
                                 <div class="card income-card card-primary mb-0">                                   
-                                  <div class="card-body text-center">
-                                    <div class="round-box"><i class="icon-bg light-dark" data-feather="package" style="fill:none;"></i></div>
+                                  <div class="card-body text-center py-1">
+                                    <div class="round-box mb-2"><i class="icon-bg light-dark" data-feather="package" style="fill:none;"></i></div>
                                     <h5>25</h5>
                                     <p>عملية تبرع</p>
                                     <div class="parrten"><i class="icon-bg text-light" data-feather="package" style="fill:none;"></i></div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-sm-4 card o-hidden border-0 mb-0">
+                              <div class="col-sm-4 card o-hidden border-0 mb-0 mt-2">
                                 <div class="card income-card card-primary mb-0">                                
-                                  <div class="card-body text-center">                                  
-                                    <div class="round-box"><i class="icon-bg text-light-dark" data-feather="dollar-sign" style="fill:none;"></i></div>
+                                  <div class="card-body text-center py-1">                                  
+                                    <div class="round-box mb-2"><i class="icon-bg text-light-dark" data-feather="dollar-sign" style="fill:none;"></i></div>
                                     <h5>8,50,49</h5>
                                     <p>إجمالي التبرعات</p>
                                     <div class="parrten"><i class="icon-bg text-light" data-feather="dollar-sign" style="fill:none;"></i></div>
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-sm-4 card border-0 mb-0">
-                                <div class="card">
+                              <div class="col-sm-4 card border-0 mb-0 mt-2">
+                                <div class="card bg-primary">
                                   <div class="card-header shadow">
                                     <div class="header-top d-sm-flex justify-content-between align-items-center">
                                       <h5>عملية التبرع الأخيرة</h5>
                                     </div>
                                   </div>
-                                  <div class="card-body bg-primary">
+                                  <div class="card-body py-4">
                                     <div class="media">
                                       <div class="media-body">
-                                        <p class="text-light f-16 fw-bold">المبلغ :<span class="ms-2 text-light">2500 </span>ر.س </p>
-                                        <p class="text-light f-16 fw-bold">التاريخ :<span class="ms-2 text-light">20/05/2022 - 10:20</span>م</p>
-                                        <p class="text-light f-16 fw-bold">الجهة :<span class="ms-2 text-light">منصة تبرع</span></p>
+                                        <p class="text-light f-14 fw-bold">المبلغ :<span class="ms-2 text-light">2500 </span>ر.س </p>
+                                        <p class="text-light f-14 fw-bold">التاريخ :<span class="ms-2 text-light">20/05/2022 - 10:20</span>م</p>
+                                        <p class="text-light f-14 fw-bold">الجهة :<span class="ms-2 text-light">منصة تبرع</span></p>
                                       </div>
                                     </div>
                                   </div>
@@ -479,8 +387,32 @@
                           <div class="bg-primary b-r-4 card-body">
                             <div class="media static-top-widget">
                               <div class="align-self-center text-center"><i data-feather="calendar"></i></div>
-                              <div class="media-body"><span class="m-0">عدد السنوات</span>
+                              <div class="media-body"><span class="m-0">مدة الاشتراك</span>
                                 <h4 class="mb-0 counter">9</h4><i class="icon-bg" data-feather="calendar"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xl-3 col-lg-3">
+                        <div class="card o-hidden border-0">
+                          <div class="bg-primary b-r-4 card-body">
+                            <div class="media static-top-widget">
+                              <div class="align-self-center text-center"><i data-feather="users"></i></div>
+                              <div class="media-body"><span class="m-0">عدد العضويات</span>
+                                <h4 class="mb-0 counter">9</h4><i class="icon-bg" data-feather="users"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-xl-3 col-lg-3">
+                        <div class="card o-hidden border-0">
+                          <div class="bg-primary b-r-4 card-body">
+                            <div class="media static-top-widget">
+                              <div class="align-self-center text-center"><i data-feather="clipboard"></i></div>
+                              <div class="media-body"><span class="m-0">عدد التفاويض</span>
+                                <h4 class="mb-0 counter">9</h4><i class="icon-bg" data-feather="clipboard"></i>
                               </div>
                             </div>
                           </div>
@@ -495,11 +427,11 @@
           <!-- Container-fluid Ends-->
         </div>
         <!-- footer start-->
-        <footer class="footer">
+        <footer class="footer footer-fix">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6 footer-copyright">
-                <p class="mb-0">© 2022 منصة نوى. جميع الحقوق محفوظة.</p>
+                <p class="mb-0">جميع الحقوق محفوظة لمنصة نوى © 1444هـ - 2022م</p>
               </div>
             </div>
           </div>
@@ -518,12 +450,8 @@
     <script src="../assets/js/bootstrap/popper.min.js"></script>
     <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
     <!-- Plugins JS start-->
-    <script src="../assets/js/chart/morris-chart/raphael.js"></script>
-    <script src="../assets/js/chart/morris-chart/morris.js"> </script>
-    <script src="../assets/js/chart/morris-chart/prettify.min.js"></script>
-    <script src="../assets/js/chart/morris-chart/morris.min.js"></script>
-    <script src="../assets/js/chart/morris-chart/morris-data.js"></script>
-    <script src="../assets/js/chart/morris-chart/morris-script-home.js"></script>
+    <script src="../assets/js/chart/chartjs/chart.js"></script>
+    <script src="../assets/js/chart/chartjs/chart.custom-home.js"></script>
     <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->

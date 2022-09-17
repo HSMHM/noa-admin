@@ -8104,3 +8104,15 @@ License - nucleoapp.com/license/
  .hero-image {
      max-height: 155px;
  }
+ 
+ .fiexd-footer {
+     margin-top: -150px;
+     z-index: 99999999999999999;
+     position: absolute;
+     width: 100%;
+     background: transparent !important;
+ }
+ 
+ .support-button {
+     display: none;
+ }

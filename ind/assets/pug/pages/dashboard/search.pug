@@ -1,0 +1,87 @@
+- var select2               = true;
+- var page_select2          = true;
+- var date_picker           = true;
+- var footer_fix            = true;
+
+doctype html
+html(lang='ar' dir="rtl")
+    include ../../components/header-files
+    body.rtl.dark-sidebar
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.modern-sidebar
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body.mb-5
+                    .container-fluid
+                      .page-header
+                        .row
+                          .col-sm-6
+                              h3
+                                | البحث
+                              ol.breadcrumb
+                                li.breadcrumb-item
+                                  a(href='index.html')
+                                   | الرئيسية
+                                li.breadcrumb-item.active البحث
+                    // Container-fluid starts
+                    .container-fluid
+                      .row.justify-content-center
+                        .col-sm-8
+                            .card
+                                .card-body
+                                    form.theme-form
+                                        .row
+                                            .mb-3.col-md-6
+                                                label.col-form-label المنطقة
+                                                select.js-example-basic-single.js-example-rtl
+                                                    option(value='da') منطقة الرياض
+                                                    option(value='kh') منطقة مكة المكرمة
+                                                    option(value='ju') منطقة المدينة المنورة
+                                                    option(value='dh') منطقة القصيم
+                                                    option(value='rh') المنطقة الشرقية
+                                                    option(value='kr') منطقة عسير
+                                                    option(value='hr') منطقة تبوك
+                                                    option(value='mk') مكة المكرمة
+                                            .mb-3.col-md-6
+                                                label.col-form-label المدينة
+                                                select.js-example-basic-single.js-example-rtl
+                                                    option(value='da') الرياض
+                                                    option(value='kh') الخبر
+                                                    option(value='ju') الجبيل
+                                                    option(value='dh') الظهران
+                                                    option(value='rh') الرياض
+                                                    option(value='kr') الخرج
+                                                    option(value='hr') حريملاء
+                                                    option(value='mk') مكة المكرمة
+                                                    option(value='jd') جدة
+                                                    option(value='ta') الطائف
+                                            .mb-3.col-md-6
+                                                label.col-form-label التصنيف
+                                                select.js-example-basic-single.js-example-rtl
+                                                    option(value='da') جمعية
+                                                    option(value='kh') مؤسسة أهلية
+                                                    option(value='ju') شركة غير ربحية
+                                            .mb-3.col-md-6
+                                                label.col-form-label المجال
+                                                select.js-example-basic-single.js-example-rtl
+                                                    option(value='da') الصحة
+                                                    option(value='kh') تقنية المعلومات
+                                                    option(value='ju') اجتماعي
+                                            .mb-3.col-md-6
+                                                label.col-form-label النشاط - البرنامج
+                                                select.js-example-basic-single.js-example-rtl
+                                                    option(value='da') كفالة يتيم
+                                                    option(value='kh') كسوة الشتاء
+                                                    option(value='ju') سلة رمضان
+                                            .mb-3.col-md-6
+                                                label.col-form-label الفترة (من-إلى)
+                                                input.datepicker-here.form-control.digits(type='text', data-range='true', data-multiple-dates-separator=' - ', data-language='ar')
+                                .card-footer
+                                  button.btn.btn-primary بحث
+                                  button.btn.btn-secondary مسح
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

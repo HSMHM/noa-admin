@@ -29,6 +29,8 @@
   <!-- Feather icon-->
   <link rel="stylesheet" type="text/css" href="../assets/css/feather-icon.css">
   <!-- Plugins css start-->
+  <link rel="stylesheet" type="text/css" href="../assets/css/select2.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/date-picker.css">
   <!-- Plugins css Ends-->
   <!-- Bootstrap css-->
   <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
@@ -37,7 +39,7 @@
   <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
   <!-- Responsive css-->
   <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
-  <body class="rtl dark-sidebar rtl dark-sidebar">
+  <body class="rtl dark-sidebar">
     <!-- Loader starts-->
     <div class="loader-wrapper">
       <div class="theme-loader">    
@@ -181,11 +183,10 @@
             <div class="page-header">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3>تقديم طلب تأسيس</h3>
+                  <h3>البحث</h3>
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">لوحة التحكم</a></li>
-                    <li class="breadcrumb-item">التأسيس   </li>
-                    <li class="breadcrumb-item active">تقديم طلب تأسيس</li>
+                    <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                    <li class="breadcrumb-item active">البحث</li>
                   </ol>
                 </div>
               </div>
@@ -193,98 +194,74 @@
           </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid">
-            <div class="user-profile social-app-profile">
-              <div class="row"> 
-                <div class="col-sm-12">
-                  <div class="card profile-header bg-overlay"><img class="img-fluid bg-img-cover" src="../assets/images/user-profile/bg-profile.jpg" alt="">
-                    <div class="profile-img-wrrap"><img class="img-fluid bg-img-cover" src="../assets/images/user-profile/bg-profile.jpg" alt=""></div>
-                    <div class="row"></div>
-                    <div class="col-md-4">
-                      <div class="card ecommerce-widget pro-gress">
-                        <div class="card-body support-ticket-font">
-                          <div class="row">
-                            <div class="col-7">
-                              <h6>الطلب السابق</h6>
-                              <h4>تأسيس جمعية أهلية</h4>
-                            </div>
-                            <div class="col-5">
-                              <div class="text-md-end">
-                                <ul>
-                                  <li>الحالة :<span class="product-stts txt-danger ms-2">غير مكتمل</span></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="progress-showcase mb-3">
-                            <div class="progress">
-                              <div class="progress-bar-animated progress-bar-striped bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </div>
-                          <div class="text-md-end"><a class="btn btn-primary" href="#">إكمال الطلب</a></div>
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <div class="card">
+                  <div class="card-body">
+                    <form class="theme-form">
+                      <div class="row">
+                        <div class="mb-3 col-md-6">
+                          <label class="col-form-label">المنطقة</label>
+                          <select class="js-example-basic-single js-example-rtl">
+                            <option value="da">منطقة الرياض</option>
+                            <option value="kh">منطقة مكة المكرمة</option>
+                            <option value="ju">منطقة المدينة المنورة</option>
+                            <option value="dh">منطقة القصيم</option>
+                            <option value="rh">المنطقة الشرقية</option>
+                            <option value="kr">منطقة عسير</option>
+                            <option value="hr">منطقة تبوك</option>
+                            <option value="mk">مكة المكرمة</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label class="col-form-label">المدينة</label>
+                          <select class="js-example-basic-single js-example-rtl">
+                            <option value="da">الرياض</option>
+                            <option value="kh">الخبر</option>
+                            <option value="ju">الجبيل</option>
+                            <option value="dh">الظهران</option>
+                            <option value="rh">الرياض</option>
+                            <option value="kr">الخرج</option>
+                            <option value="hr">حريملاء</option>
+                            <option value="mk">مكة المكرمة</option>
+                            <option value="jd">جدة</option>
+                            <option value="ta">الطائف</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label class="col-form-label">التصنيف</label>
+                          <select class="js-example-basic-single js-example-rtl">
+                            <option value="da">جمعية</option>
+                            <option value="kh">مؤسسة أهلية</option>
+                            <option value="ju">شركة غير ربحية</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label class="col-form-label">المجال</label>
+                          <select class="js-example-basic-single js-example-rtl">
+                            <option value="da">الصحة</option>
+                            <option value="kh">تقنية المعلومات</option>
+                            <option value="ju">اجتماعي</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label class="col-form-label">النشاط - البرنامج</label>
+                          <select class="js-example-basic-single js-example-rtl">
+                            <option value="da">كفالة يتيم</option>
+                            <option value="kh">كسوة الشتاء</option>
+                            <option value="ju">سلة رمضان</option>
+                          </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                          <label class="col-form-label">الفترة (من-إلى)</label>
+                          <input class="datepicker-here form-control digits" type="text" data-range="true" data-multiple-dates-separator=" - " data-language="ar">
                         </div>
                       </div>
-                    </div>
+                    </form>
                   </div>
-                </div>
-                <div class="col-sm-12 box-col-12">
-                  <div class="row">             
-                    <div class="col-xl-4 xl-100 box-col-6">
-                      <div class="card features-faq product-box">
-                        <div class="card-header bg-primary d-flex justify-content-between align-items-center"><a class="text-white" href="#">
-                            <h6>تأسيس جمعية أهلية</h6></a></div>
-                        <div class="card-body">
-                          <p> تتيح هذه الخدمة للمواطنين أو الجهات الاعتبارية تأسيس جمعية أهلية دون الحاجة إلى مراجعة المركز… .</p>
-                        </div>
-                        <div class="card-footer"><a class="btn btn-secondary" href="#">بدء الخدمة</a>
-                          <ul class="pull-right">
-                            <li><span>التقييم :</span></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xl-4 xl-100 box-col-6">
-                      <div class="card features-faq product-box">
-                        <div class="card-header bg-primary d-flex justify-content-between align-items-center"><a class="text-white" href="#">
-                            <h6>تأسيس مؤسسة أهلية</h6></a></div>
-                        <div class="card-body">
-                          <p> تتيح هذه الخدمة للمواطنين أو الجهات الاعتبارية تأسيس مؤسسة أهلية دون الحاجة إلى مراجعة المركز…</p>
-                        </div>
-                        <div class="card-footer"><a class="btn btn-secondary" href="#">بدء الخدمة</a>
-                          <ul class="pull-right">
-                            <li><span>التقييم :</span></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xl-4 xl-100 box-col-6">
-                      <div class="card features-faq product-box">
-                        <div class="card-header bg-primary d-flex justify-content-between align-items-center"><a class="text-white" href="#">
-                            <h6>تأسيس صندوق عائلي</h6></a></div>
-                        <div class="card-body">
-                          <p> تتيح هذه الخدمه للمواطنين تأسيس الصناديق العائلية لتعزيز صلة الرحم ، وبث روح التكافل والتآلف….</p>
-                        </div>
-                        <div class="card-footer"><a class="btn btn-secondary" href="#">بدء الخدمة</a>
-                          <ul class="pull-right">
-                            <li><span>التقييم :</span></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                            <li><i class="fa fa-star font-primary"></i></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="card-footer">
+                    <button class="btn btn-primary">بحث</button>
+                    <button class="btn btn-secondary">مسح</button>
                   </div>
                 </div>
               </div>
@@ -316,6 +293,12 @@
     <script src="../assets/js/bootstrap/popper.min.js"></script>
     <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
     <!-- Plugins JS start-->
+    <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.ar.js"></script>
+    <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+    <script src="../assets/js/select2/select2.full.min.js"></script>
+    <script src="../assets/js/select2/select2-custom.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="../assets/js/script.js"></script>

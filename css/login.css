@@ -39,6 +39,30 @@
     padding: 50px;
 }
 
+.login-card .card-body p {
+    width: 100%;
+    display: block;
+    opacity: 0;
+    position: relative;
+    top: 3px;
+    transition: opacity 0.3s, top 0.3s ease 0s;
+}
+
+.login-card .card-body p:hover,
+.login-card .card-body p:focus {
+    text-decoration: none;
+    opacity: 1;
+    top: 0;
+}
+
+.login-card .card-body p:focus {
+    box-shadow: inset 0 0 0 2px #38beea;
+    outline: none;
+    border-radius: 2px;
+    z-index: 1090;
+    position: relative;
+}
+
 .login-card .card-image {
     position: relative;
 }
@@ -104,6 +128,12 @@
 
 .login-card:hover .card-footer a,
 .login-card:focus .card-footer a {
+    opacity: 1;
+    top: 0;
+}
+
+.login-card:hover .card-body p,
+.login-card:focus .card-body p {
     opacity: 1;
     top: 0;
 }
