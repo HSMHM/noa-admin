@@ -31,9 +31,9 @@ html(lang='ar' dir="rtl")
                                 li.breadcrumb-item.active البحث
                     // Container-fluid starts
                     .container-fluid
-                      .row.justify-content-between
+                      .row.justify-content-center.h-auto
                         .col-sm-7
-                            .card
+                            .card.h-100
                                 .card-body
                                     form.theme-form
                                         .row
@@ -80,15 +80,46 @@ html(lang='ar' dir="rtl")
                                                     option(value='kh') كسوة الشتاء
                                                     option(value='ju') سلة رمضان
                                             .mb-3.col-md-6
+                                                label.col-form-label المشاريع
+                                                select.js-example-basic-single.js-example-rtl
+                                                    option(value='da') كفالة يتيم
+                                                    option(value='kh') كسوة الشتاء
+                                                    option(value='ju') سلة رمضان
+                                            .mb-3.col-md-6
                                                 label.col-form-label الفترة (من-إلى)
                                                 input.datepicker-here.form-control.digits(type='text', data-range='true', data-multiple-dates-separator=' - ', data-language='ar')
                                 .card-footer
                                   button.btn.btn-primary بحث
                                   button.btn.btn-secondary مسح
                         .col-sm-5
-                            .card
-                                .card-body
-                                    #map
+                            .card.h-100
+                                .card-body.d-block
+                                    #map.w-75.m-auto
+                      .row.projects-1
+                        h3.mt-5.mb-3
+                          | المشاريع              
+                        .col-xl-4.xl-100.box-col-6
+                          .card.features-faq.product-box
+                            .card-header.bg-primary.d-flex.justify-content-between.align-items-center
+                              a.text-white(href="#")
+                                h6 تأسيس جمعية أهلية
+                            .card-body
+                              p
+                                |  تتيح هذه الخدمة للمواطنين أو الجهات الاعتبارية تأسيس جمعية أهلية دون الحاجة إلى مراجعة المركز… .
+                            .card-footer
+                              a.btn.btn-secondary(href='#')
+                                | بدء الخدمة
+                        .col-xl-4.xl-100.box-col-6
+                          .card.features-faq.product-box
+                            .card-header.bg-primary.d-flex.justify-content-between.align-items-center
+                              a.text-white(href="#")
+                                h6 تأسيس مؤسسة أهلية
+                            .card-body
+                              p
+                                |  تتيح هذه الخدمة للمواطنين أو الجهات الاعتبارية تأسيس مؤسسة أهلية دون الحاجة إلى مراجعة المركز…
+                            .card-footer
+                              a.btn.btn-secondary(href='#')
+                                | بدء الخدمة
                     // Container-fluid Ends
                 include ../../components/footer
         include ../../components/footer-files
