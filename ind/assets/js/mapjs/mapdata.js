@@ -10,10 +10,10 @@ var simplemaps_countrymap_mapdata = {
         state_description: "State description",
         state_color: "#085566",
         state_hover_color: "#00B6A1",
-        state_url: "",
+        state_url: "#",
         border_size: 1.5,
         all_states_inactive: "no",
-        all_states_zoomable: "yes",
+        all_states_zoomable: "no",
 
         //Location defaults
         location_description: "Location description",
@@ -73,43 +73,56 @@ var simplemaps_countrymap_mapdata = {
     },
     state_specific: {
         SAU1096: {
-            name: "نجران"
+            name: "نجران",
+            url: "javascript:js.click()"
         },
         SAU1097: {
-            name: "الرياض"
+            name: "الرياض",
+            url: "javascript:js.click()"
         },
         SAU1098: {
-            name: "المنطقة الشرقية"
+            name: "المنطقة الشرقية",
+            url: "javascript:js.click()"
         },
         SAU845: {
-            name: "المندينة المنورة"
+            name: "المندينة المنورة",
+            url: "javascript:js.click()"
         },
         SAU846: {
-            name: "القصيم"
+            name: "القصيم",
+            url: "javascript:js.click()"
         },
         SAU847: {
-            name: "حائل"
+            name: "حائل",
+            url: "javascript:js.click()"
         },
         SAU848: {
-            name: "تبوك"
+            name: "تبوك",
+            url: "javascript:js.click()"
         },
         SAU861: {
-            name: "الحدود الشمالية"
+            name: "الحدود الشمالية",
+            url: "javascript:js.click()"
         },
         SAU862: {
-            name: "الجوف"
+            name: "الجوف",
+            url: "javascript:js.click()"
         },
         SAU885: {
-            name: "الباحة"
+            name: "الباحة",
+            url: "javascript:js.click()"
         },
         SAU886: {
-            name: "عسير"
+            name: "عسير",
+            url: "javascript:js.click()"
         },
         SAU887: {
-            name: "جازان"
+            name: "جازان",
+            url: "javascript:js.click()"
         },
         SAU888: {
-            name: "مكة المكرمة"
+            name: "مكة المكرمة",
+            url: "javascript:js.click()"
         }
     },
     locations: {
@@ -124,4 +137,20 @@ var simplemaps_countrymap_mapdata = {
         entries: []
     },
     regions: {}
+};
+
+
+
+$('.projects-1').hide();
+
+var js = document.getElementsByClassName('sm_state_SAU1097');
+js.click = function showProject() {
+    var elms = document.getElementsByClassName("projects-1");
+    Array.from(elms).forEach((x) => {
+        if (x.style.display === "none") {
+            x.style.display = "flex";
+        } else {
+            x.style.display = "none";
+        }
+    })
 };
