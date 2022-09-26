@@ -6549,7 +6549,7 @@ License - nucleoapp.com/license/
  }
  
  .page-header .filter::after {
-     background-color: rgba(0, 0, 0, 0.5);
+     background-color: rgba(1, 83, 99, 0.7);
      content: "";
      display: block;
      height: 100%;
@@ -6785,9 +6785,28 @@ License - nucleoapp.com/license/
      bottom: 0;
      right: 0;
      width: 250.625em;
-     height: 43.75em;
+     height: 200.75em;
      -webkit-animation: cloudLoop 80s linear infinite;
      animation: cloudLoop 80s linear infinite;
+ }
+ 
+ .fixed-bg-logo {
+     position: absolute;
+     z-index: 1;
+     bottom: -1690px;
+     left: 75px;
+     width: 150em;
+     height: 155.75em;
+     background-repeat: no-repeat;
+     background-size: 33%;
+ }
+ 
+ @media only screen and (max-width: 1200px) {
+     .fixed-bg-logo {
+         opacity: 0.9;
+         background-size: 20%;
+         bottom: -1900px;
+     }
  }
  
  @keyframes cloudLoop {

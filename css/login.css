@@ -148,3 +148,39 @@
     z-index: 2;
     margin-top: 130px;
 }
+
+
+/* ************************************************************************ */
+
+.custom-login-button {
+    width: 100%;
+}
+
+.custom-login {
+    width: 50%;
+}
+
+.des-gov {
+    width: 50%;
+}
+
+.login-btns .custom-login:hover {
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    -o-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+}
+
+.login-btns .des-gov {
+    opacity: 0;
+    position: relative;
+    top: 3px;
+    transition: opacity 0.6s, top 0.4s ease 0s;
+}
+
+.custom-login:hover+.des-gov,
+.custom-login:focus+.des-gov {
+    opacity: 1;
+    top: 0;
+}
