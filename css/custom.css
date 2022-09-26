@@ -6801,6 +6801,18 @@ License - nucleoapp.com/license/
      background-size: 33%;
  }
  
+ .fixed-bg-logo-home {
+     position: absolute;
+     z-index: 1;
+     bottom: -1251px;
+     left: 75px;
+     width: 276em;
+     height: 155.75em;
+     background-repeat: no-repeat;
+     background-size: 33%;
+     opacity: 0.2;
+ }
+ 
  @media only screen and (max-width: 1200px) {
      .fixed-bg-logo {
          opacity: 0.9;
@@ -8121,7 +8133,7 @@ License - nucleoapp.com/license/
  }
  
  .hero-image {
-     max-height: 155px;
+     max-height: 300px;
  }
  
  .fiexd-footer {
