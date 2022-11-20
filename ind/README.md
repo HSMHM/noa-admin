@@ -1,2 +1,0 @@
-# nawa-admin
- Noa Platform
